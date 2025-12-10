@@ -11,15 +11,15 @@ A lightweight, high-performance HTTP web server written in modern **C++17**, fea
 
 This project is designed as both a **learning tool** and a **production-inspired system**, showcasing networking, concurrency, HTTP fundamentals, caching, and real-time system monitoring.
 
----
+----------------------------------------------------------------------
 
 ## 📸 Dashboard Preview
+<img width="1914" height="903" alt="image" src="https://github.com/user-attachments/assets/98a2879e-2ca5-478a-8d18-f7f2560c10e9" />
 
-> Replace these with actual screenshots after running your server.
 
 ![Dashboard Screenshot](assets/dashboard.png)
 
----
+------------------------------------------------------------------
 
 # 📂 Project Structure
 
@@ -90,7 +90,7 @@ Includes:
 | `/admin/dashboard.html` | Interactive real-time UI |
 | `/admin/health` | Returns "OK" (useful for uptime monitors) |
 
----
+----------------------------------------------------------------
 
 # 🧠 Architecture Overview
 
@@ -124,5 +124,17 @@ Install build essentials:
 ```bash
 sudo apt update
 sudo apt install g++ build-essential
+
+------------------------------------------------------------------------
+🚀 Build & Run
+1️⃣ Clone the repo
+git clone https://github.com/<your-username>/mini_webserver.git
+cd mini_webserver
+
+2️⃣ Build the server
+g++ -std=c++17 src/*.cpp -Iinclude -pthread -o mini_webserver
+
+3️⃣ Run the server
+./mini_webserver 8080 4 ./static
 
 
